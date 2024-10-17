@@ -1,0 +1,57 @@
+/system/software/generic/fluent/19.2/v192/fluent/fluent19.2.0/bin/fluent -r19.2.0 3ddp -g -mpi=intel -t1 -i rib.jou
+/system/software/generic/fluent/19.2/v192/fluent/fluent19.2.0/cortex/lnamd64/cortex.19.2.0 -f fluent -g -i rib.jou (fluent "3ddp -pshmem  -host -r19.2.0 -t1 -mpi=intel -path/system/software/generic/fluent/19.2/v192/fluent -ssh")
+/system/software/generic/fluent/19.2/v192/fluent/fluent19.2.0/bin/fluent -r19.2.0 3ddp -pshmem -host -t1 -mpi=intel -path/system/software/generic/fluent/19.2/v192/fluent -ssh -cx arcus-htc-node003.arcus-htc.arc.local:38525:42395
+Starting /system/software/generic/fluent/19.2/v192/fluent/fluent19.2.0/lnamd64/3ddp_host/fluent.19.2.0 host -cx arcus-htc-node003.arcus-htc.arc.local:38525:42395 "(list (rpsetvar (QUOTE parallel/function) "fluent 3ddp -flux -node -r19.2.0 -t1 -pshmem -mpi=intel -ssh") (rpsetvar (QUOTE parallel/rhost) "") (rpsetvar (QUOTE parallel/ruser) "") (rpsetvar (QUOTE parallel/nprocs_string) "1") (rpsetvar (QUOTE parallel/auto-spawn?) #t) (rpsetvar (QUOTE parallel/trace-level) 0) (rpsetvar (QUOTE parallel/remote-shell) 1) (rpsetvar (QUOTE parallel/path) "/system/software/generic/fluent/19.2/v192/fluent") (rpsetvar (QUOTE parallel/hostsfile) "") )"
+
+              Welcome to ANSYS Fluent Release 19.2
+
+              Copyright 1987-2018 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: Aug 08 2018 12:59:02 EDT  Build Id: 10236  
+ 
+
+     --------------------------------------------------------------
+     This is an academic version of ANSYS FLUENT. Usage of this product
+     license is limited to the terms and conditions specified in your ANSYS
+     license form, additional terms section.
+     --------------------------------------------------------------
+Host spawning Node 0 on machine "arcus-htc-node003" (unix).
+/system/software/generic/fluent/19.2/v192/fluent/fluent19.2.0/bin/fluent -r19.2.0 3ddp -flux -node -t1 -pshmem -mpi=intel -ssh -mport 10.137.20.3:10.137.20.3:33194:0
+Starting /system/software/generic/fluent/19.2/v192/fluent/fluent19.2.0/multiport/mpi/lnamd64/intel/bin/mpirun -f /tmp/fluent-appfile.engs1748.39433 -genv I_MPI_FABRICS shm -genv I_MPI_FALLBACK_DEVICE disable -genv I_MPI_DEBUG 0 -genv I_MPI_PIN disable -genv I_MPI_ADJUST_REDUCE 2 -genv I_MPI_ADJUST_ALLREDUCE 2 -genv I_MPI_ADJUST_BCAST 1 -genv I_MPI_PLATFORM auto -genv I_MPI_DAPL_SCALABLE_PROGRESS 1 -genv PYTHONHOME /system/software/generic/fluent/19.2/v192/fluent/fluent19.2.0/../../commonfiles/CPython/2_7_13/linx64/Release/python -genv FLUENT_PROD_DIR /system/software/generic/fluent/19.2/v192/fluent/fluent19.2.0 -genv KMP_AFFINITY=disabled -genv LD_PRELOAD /system/software/generic/fluent/19.2/v192/fluent/fluent19.2.0/multiport/mpi/lnamd64/intel/lib/libmpi_mt.so -genv TMI_CONFIG /system/software/generic/fluent/19.2/v192/fluent/fluent19.2.0/multiport/mpi/lnamd64/intel/etc/tmi.conf -n 1 -host arcus-htc-node003 /system/software/generic/fluent/19.2/v192/fluent/fluent19.2.0/lnamd64/3ddp_node/fluent_mpi.19.2.0 node -mpiw intel -pic shmem -mport 10.137.20.3:10.137.20.3:33194:0
+
+-------------------------------------------------------------------------------
+ID    Hostname           Core  O.S.      PID    Vendor                     
+-------------------------------------------------------------------------------
+n0    arcus-htc-node003  1/16  Linux-64  39487  Intel(R) Xeon(R) E5-2650 0 
+host  arcus-htc-node003        Linux-64  39291  Intel(R) Xeon(R) E5-2650 0 
+
+MPI Option Selected: intel
+-------------------------------------------------------------------------------
+
+
+ +------------------------------------------------------------------+
+ |                    ANSYS Product Improvement                     |
+ |                                                                  |
+ |   ANSYS Product Improvement Program helps improve ANSYS          |
+ |   products. Participating in this program is like filling out a  |
+ |   survey. Without interrupting your work, the software reports   |
+ |   anonymous usage information such as errors, machine and        |
+ |   solver statistics, features used, etc. to ANSYS. We never      |
+ |   use the data to identify or contact you.                       |
+ |   The data does NOT contain:                                     |
+ |   - Any personally identifiable information including names,     |
+ |     IP addresses, file names, part names, etc.                   |
+ |   - Any information about your geometry or design specific       |
+ |     inputs.                                                      |
+ |   You can stop participation at any time. To change your         |
+ |   selection go to Help >> ANSYS Product Improvement Program      |
+ |   in the GUI.                                                    |
+ |   For more information about the ANSYS Privacy Policy, please    |
+ |   check: http://www.ansys.com/privacy                            |
+ |                                                                  |
+ +------------------------------------------------------------------+
+
+> Halting due to end of file on input.

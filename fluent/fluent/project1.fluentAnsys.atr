@@ -1,0 +1,16 @@
+# Written by ICEM CFD 20.2, user engs1748, Sun May 30 22:22:40 GMT Summer Time 2021
+
+begin family DEFAULT
+    begin solver "ANSYS Fluent"
+    end solver "ANSYS Fluent"
+end family DEFAULT
+
+begin family DEFAULT_SUBFACE
+    begin solver "ANSYS Fluent"
+    end solver "ANSYS Fluent"
+end family DEFAULT_SUBFACE
+
+begin family DEFAULT_EDGE
+    begin solver "ANSYS Fluent"
+    end solver "ANSYS Fluent"
+end family DEFAULT_EDGE

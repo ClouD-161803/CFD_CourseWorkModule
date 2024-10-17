@@ -1,0 +1,391 @@
+Auto-Transcript Start Time:  10:49:26, 20 May 2024 GMT Daylight Time 
+Current Directory: "C:\Users\kebl7595\Desktop\CFD\fluent\fluent"
+
+              Welcome to ANSYS Fluent 2023 R1
+
+              Copyright 1987-2023 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: Nov 28 2022 09:52:02 EST  Build Id: 10208  
+ 
+Connected License Server List:	1055@ansyslic.eng.ox.ac.uk
+
+*********************************************
+Info: Your license enables 4-way parallel execution.
+For faster simulations, please start the application with the appropriate parallel options.
+*********************************************
+
+
+     --------------------------------------------------------------
+     This is an academic version of ANSYS FLUENT. Usage of this product
+     license is limited to the terms and conditions specified in your ANSYS
+     license form, additional terms section.
+     --------------------------------------------------------------
+Host spawning Node 0 on machine "Engs-30669" (win64).
+
+------------------------------------------------------------------------------------
+ID    Hostname    Core  O.S.         PID    Vendor                                 
+------------------------------------------------------------------------------------
+n0    Engs-30669  1/32  Windows-x64  15272  13th Gen Intel(R) Core(TM) i9-13900    
+host  Engs-30669        Windows-x64  39440  13th Gen Intel(R) Core(TM) i9-13900    
+
+MPI Option Selected: intel
+------------------------------------------------------------------------------------
+
+Cleanup script file is C:\\Users\\kebl7595\\Desktop\\CFD\\fluent\\fluent\\cleanup-fluent-Engs-30669-39440.bat
+QA Service Message :
+QA Services Agreement Enabled. This application is included in the scope of an ANSYS QA Services Agreement.
+Posting ANSYS Product Improvement Program startup data
+Done.
+Fast-loading "C:\PROGRA~1\ANSYSI~1\v231\fluent\fluent23.1.0\\addons\afd\lib\hdfio.bin"
+Done.
+
+Engs-30669 has other FLUENT parallel processes running.                       Process affinity not being set.
+
+Reading from Engs-30669:"C:/Users/kebl7595/Desktop/CFD/fluent/fluent/project1.cas.h5" in NODE0 mode ...
+  Reading mesh ...
+       12996 cells,     1 cell zone  ...
+          12996 hexahedral cells,  zone id: 1
+       43722 faces,     8 face zones ...
+           4332 quadrilateral symmetry faces,  zone id: 2
+            228 quadrilateral pressure-far-field faces,  zone id: 10
+           4332 quadrilateral symmetry faces,  zone id: 9
+            342 quadrilateral pressure-far-field faces,  zone id: 8
+            228 quadrilateral wall faces,  zone id: 7
+          33972 quadrilateral interior faces,  zone id: 3
+            282 quadrilateral interior faces,  zone id: 4
+              6 quadrilateral wall faces,  zone id: 5
+       17864 nodes,     1 node zone  ...
+  Done.
+
+
+Building...
+     mesh
+     materials,
+     interface,
+     domains,
+	mixture
+     zones,
+	te
+	interface-default_subface
+	default_interior-1
+	wing
+	far1
+	far2
+	sym1
+	sym2
+	default
+     parallel,
+Done.
+
+Reading from Engs-30669:"C:/Users/kebl7595/Desktop/CFD/fluent/fluent/project1.dat.h5" in NODE0 mode ...
+
+
+  Reading results.
+Parallel variables...
+Done.
+
+> (cx-gui-do cx-activate-item "QA Service Message*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Plots"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Contours"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Contours"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Contours"))
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '( 3))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-activate-item "Contours*PanelButtons*PushButton1(OK)")
+(cx-use-window-id 51)
+(cxg-clear-all-selections (cx-active-window))
+(cxg-add-surfaces-to-selection '(sym1) (cx-active-window))
+(cx-use-window-id 51)
+(cx-gui-do cx-activate-item "Contours*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Monitors"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Monitors"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Monitors"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Monitors|Report Plots"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Monitors|Report Plots"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Monitors|Report Plots"))
+(cx-gui-do cx-activate-item "Report Plot Definitions*PanelButtons*PushButton1(Close)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Monitors|Report Files"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Monitors|Report Files"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Monitors|Report Files"))
+(cx-gui-do cx-activate-item "Report File Definitions*PanelButtons*PushButton1(Close)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Plots|Cumulative Plot"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Plots|Cumulative Plot"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Plots|Cumulative Plot"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Plots|Cumulative Plot"))
+(cx-gui-do cx-set-toggle-button2 "Cumulative Plot*Table1*ToggleBox1(Options)*Cumulative Force Coefficient" #t)
+(cx-gui-do cx-activate-item "Cumulative Plot*Table1*ToggleBox1(Options)*Cumulative Force Coefficient")
+(cx-gui-do cx-set-toggle-button2 "Cumulative Plot*Table1*ToggleBox1(Options)*Cumulative Moments" #t)
+(cx-gui-do cx-activate-item "Cumulative Plot*Table1*ToggleBox1(Options)*Cumulative Moments")
+(cx-gui-do cx-set-toggle-button2 "Cumulative Plot*Table1*ToggleBox1(Options)*Cumulative Moment Coefficient" #t)
+(cx-gui-do cx-activate-item "Cumulative Plot*Table1*ToggleBox1(Options)*Cumulative Moment Coefficient")
+(cx-gui-do cx-set-toggle-button2 "Cumulative Plot*Table1*ToggleBox1(Options)*Cumulative Force Coefficient" #t)
+(cx-gui-do cx-activate-item "Cumulative Plot*Table1*ToggleBox1(Options)*Cumulative Force Coefficient")
+(cx-gui-do cx-set-real-entry-list "Cumulative Plot*Table1*Frame3*Frame1(Force Direction)*RealEntry2(Y)" '( 1))
+(cx-gui-do cx-set-real-entry-list "Cumulative Plot*Table1*Frame3*Frame1(Force Direction)*RealEntry1(X)" '( 0))
+(cx-gui-do cx-activate-item "Cumulative Plot*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Plots|Histogram"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Plots|Histogram"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Plots|Histogram"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Plots|Histogram"))
+(cx-gui-do cx-activate-item "Histogram*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Plots|XY Plot"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Plots|XY Plot"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Plots|XY Plot"))
+(cx-gui-do cx-set-list-selections "Solution XY Plot*Table1*Table3*Table1*DropDownList2" '( 1))
+(cx-gui-do cx-activate-item "Solution XY Plot*Table1*Table3*Table1*DropDownList2")
+(cx-gui-do cx-set-list-selections "Solution XY Plot*Table1*Table3*Frame3*List1(Surfaces)" '( 6))
+(cx-gui-do cx-activate-item "Solution XY Plot*Table1*Table3*Frame3*List1(Surfaces)")
+(cx-gui-do cx-activate-item "Solution XY Plot*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "Solution XY Plot*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Plots|XY Plot|xy-plot-1"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Plots|XY Plot|xy-plot-1"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Plots|XY Plot|xy-plot-1"))
+(cx-gui-do cx-set-toggle-button2 "Solution XY Plot*Table1*Table1*ButtonBox1(Options)*CheckButton4(Write to File)" #t)
+(cx-gui-do cx-activate-item "Solution XY Plot*Table1*Table1*ButtonBox1(Options)*CheckButton4(Write to File)")
+(cx-gui-do cx-activate-item "Solution XY Plot*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "C:/Users/kebl7595/Desktop/CFD/Run1/Fine Mesh") "XY Files (*.xy)")
+(cx-gui-do cx-activate-item "Solution XY Plot*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-activate-item "MenuBar*WriteSubMenu*Start Journal...")
+
+Opening input journal to file "C:/Users/kebl7595/Desktop/CFD/Run1/test".
+
+adjoint/                parallel/               server/
+define/                 parametric-study/       solve/
+display/                plot/                   surface/
+exit                    preferences/            turbo-workflow/
+file/                   print-license-usage     views/
+mesh/                   report/
+
+> display
+
+/display> 
+add-custom-vector       open-window             surface-cells
+close-window            profile                 surface-mesh
+close-window-by-name    re-render               surface/
+define/                 re-scale                update-layout
+display-states/         save-picture            update-scene/
+embedded-windows/       set-list-tree-separator views/
+hsf-file                set-window              zone-mesh
+mesh-partition-boundary set-window-by-name
+objects/                set/
+
+/display> exit
+invalid command [exit]
+
+/display> plot
+invalid command [plot]
+
+/display> 
+add-custom-vector       open-window             surface-cells
+close-window            profile                 surface-mesh
+close-window-by-name    re-render               surface/
+define/                 re-scale                update-layout
+display-states/         save-picture            update-scene/
+embedded-windows/       set-list-tree-separator views/
+hsf-file                set-window              zone-mesh
+mesh-partition-boundary set-window-by-name
+objects/                set/
+
+/display> quit
+
+> plot
+
+/plot> 
+ansys-sound-analysis/   fft                     label-alignment
+change-fft-ref-pressure fft-set/                plot
+circum-avg-axial        file                    plot-direction
+circum-avg-radial       file-list               residuals
+cumulative-plot/        file-set/               residuals-set/
+datasources/            histogram               set-boundary-val-off
+display-profile-data    histogram-set/
+
+/plot> plor
+invalid command [plor]
+
+/plot> plot
+node values? [yes] y
+filename [""] test.dat
+order points? [no] yes
+Y Axis direction vector? [no] no
+Y Axis curve length? [no] no
+
+cell function> 
+abs-angular-coordinate                          partition-neighbors
+absolute-pressure                               pressure
+angular-coordinate                              pressure-coefficient
+anisotropic-adaption-cells                      pressure-hessian-indicator
+axial-coordinate                                radial-coordinate
+axial-velocity                                  radial-velocity
+boundary-cell-dist                              rel-mach-number
+boundary-layer-cells                            rel-tangential-velocity
+boundary-normal-dist                            rel-total-pressure
+boundary-volume-dist                            rel-total-temperature
+cell-element-type                               rel-velocity-magnitude
+cell-equiangle-skew                             relative-velocity-angle
+cell-equivolume-skew                            relative-x-velocity
+cell-id                                         relative-y-velocity
+cell-parent-index                               relative-z-velocity
+cell-partition-active                           rothalpy
+cell-partition-stored                           smoothed-cell-refine-level
+cell-refine-level                               sound-speed
+cell-type                                       specific-heat-cp
+cell-volume                                     tangential-velocity
+cell-volume-change                              temperature
+cell-wall-distance                              time-step
+cell-weight                                     total-energy
+cell-zone                                       total-enthalpy
+density                                         total-enthalpy-deviation
+density-all                                     total-pressure
+dynamic-pressure                                total-temperature
+enthalpy                                        uref
+entropy                                         velocity-angle
+face-area-magnitude                             velocity-magnitude
+face-handedness                                 wall-temp-in-surf
+gamma                                           wall-temp-out-surf
+gas-constant                                    x-coordinate
+interface-overlap-fraction                      x-face-area
+internal-energy                                 x-velocity
+mach-number                                     y-coordinate
+mark-poor-elements                              y-face-area
+mesh-x-velocity                                 y-velocity
+mesh-y-velocity                                 z-coordinate
+mesh-z-velocity                                 z-face-area
+orthogonal-quality                              z-velocity
+
+cell function> pressure
+X Axis direction vector? [no] no
+X Axis curve length? [no] no
+
+cell function> 
+abs-angular-coordinate                          partition-neighbors
+absolute-pressure                               pressure
+angular-coordinate                              pressure-coefficient
+anisotropic-adaption-cells                      pressure-hessian-indicator
+axial-coordinate                                radial-coordinate
+axial-velocity                                  radial-velocity
+boundary-cell-dist                              rel-mach-number
+boundary-layer-cells                            rel-tangential-velocity
+boundary-normal-dist                            rel-total-pressure
+boundary-volume-dist                            rel-total-temperature
+cell-element-type                               rel-velocity-magnitude
+cell-equiangle-skew                             relative-velocity-angle
+cell-equivolume-skew                            relative-x-velocity
+cell-id                                         relative-y-velocity
+cell-parent-index                               relative-z-velocity
+cell-partition-active                           rothalpy
+cell-partition-stored                           smoothed-cell-refine-level
+cell-refine-level                               sound-speed
+cell-type                                       specific-heat-cp
+cell-volume                                     tangential-velocity
+cell-volume-change                              temperature
+cell-wall-distance                              time-step
+cell-weight                                     total-energy
+cell-zone                                       total-enthalpy
+density                                         total-enthalpy-deviation
+density-all                                     total-pressure
+dynamic-pressure                                total-temperature
+enthalpy                                        uref
+entropy                                         velocity-angle
+face-area-magnitude                             velocity-magnitude
+face-handedness                                 wall-temp-in-surf
+gamma                                           wall-temp-out-surf
+gas-constant                                    x-coordinate
+interface-overlap-fraction                      x-face-area
+internal-energy                                 x-velocity
+mach-number                                     y-coordinate
+mark-poor-elements                              y-face-area
+mesh-x-velocity                                 y-velocity
+mesh-y-velocity                                 z-coordinate
+mesh-z-velocity                                 z-face-area
+orthogonal-quality                              z-velocity
+
+cell function> quit
+(6)
+surface id/name(1) [6] wing
+surface id/name(2) [()] 
+
+Error at host: Cell_Function_Values: unrecognized function: quit
+
+
+Error at Node 0: Cell_Function_Values: unrecognized function: quitError
+: Cell_Function_Values: unrecognized function: quit
+Error Object: #f
+
+/plot> (cx-gui-do cx-activate-item "MenuBar*WriteSubMenu*Stop Journal")
+
+Journal closed.
+
+ansys-sound-analysis/   fft                     label-alignment
+change-fft-ref-pressure fft-set/                plot
+circum-avg-axial        file                    plot-direction
+circum-avg-radial       file-list               residuals
+cumulative-plot/        file-set/               residuals-set/
+datasources/            histogram               set-boundary-val-off
+display-profile-data    histogram-set/
+
+/plot> quit
+
+> 
+adjoint/                parallel/               server/
+define/                 parametric-study/       solve/
+display/                plot/                   surface/
+exit                    preferences/            turbo-workflow/
+file/                   print-license-usage     views/
+mesh/                   report/
+
+> (cx-gui-do cx-activate-item "MenuBar*FileMenu*Save Picture...")
+(cx-gui-do cx-activate-item "Save Picture*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet|far1 (pressure-far-field, id=8)"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet|far1 (pressure-far-field, id=8)"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet|far2 (pressure-far-field, id=10)"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet|far2 (pressure-far-field, id=10)"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet|far1 (pressure-far-field, id=8)"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet|far1 (pressure-far-field, id=8)"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet|far1 (pressure-far-field, id=8)"))
+(cx-gui-do cx-activate-tab-index "Pressure Far-Field*Frame3" 0)
+(cx-gui-do cx-activate-tab-index "Pressure Far-Field*Frame3" 1)
+(cx-gui-do cx-activate-tab-index "Pressure Far-Field*Frame3" 0)
+(cx-gui-do cx-activate-tab-index "Pressure Far-Field*Frame3" 2)
+(cx-gui-do cx-activate-tab-index "Pressure Far-Field*Frame3" 0)
+(cx-gui-do cx-activate-tab-index "Pressure Far-Field*Frame3" 3)
+(cx-gui-do cx-activate-tab-index "Pressure Far-Field*Frame3" 0)
+(cx-gui-do cx-activate-tab-index "Pressure Far-Field*Frame3" 4)
+(cx-gui-do cx-activate-tab-index "Pressure Far-Field*Frame3" 0)
+(cx-gui-do cx-activate-tab-index "Pressure Far-Field*Frame3" 5)
+(cx-gui-do cx-activate-tab-index "Pressure Far-Field*Frame3" 0)
+(cx-gui-do cx-activate-tab-index "Pressure Far-Field*Frame3" 6)
+(cx-gui-do cx-activate-tab-index "Pressure Far-Field*Frame3" 0)
+(cx-gui-do cx-activate-tab-index "Pressure Far-Field*Frame3" 7)
+(cx-gui-do cx-activate-tab-index "Pressure Far-Field*Frame3" 0)
+(cx-gui-do cx-activate-item "Pressure Far-Field*PanelButtons*PushButton2(Cancel)")
+/exit y
+
+Posting ANSYS Product Improvement Program performance data 
+Done.
+(cx-gui-do cx-activate-item "Question*OK")
+Auto-Transcript Stop Time:  12:09:12, 20 May 2024 GMT Daylight Time 
+Total Transcript Time: 1 Hour 19 Minute 46 Second.

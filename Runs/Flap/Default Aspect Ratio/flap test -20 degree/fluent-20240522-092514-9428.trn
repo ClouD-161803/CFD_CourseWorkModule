@@ -1,0 +1,233 @@
+Auto-Transcript Start Time:  09:25:14, 22 May 2024 GMT Daylight Time 
+Current Directory: "C:\Users\kebl7595\Desktop\CFD\Runs\Flap\test"
+
+              Welcome to ANSYS Fluent 2023 R1
+
+              Copyright 1987-2023 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: Nov 28 2022 09:52:02 EST  Build Id: 10208  
+ 
+Connected License Server List:	1055@ansyslic.eng.ox.ac.uk
+
+*********************************************
+Info: Your license enables 4-way parallel execution.
+For faster simulations, please start the application with the appropriate parallel options.
+*********************************************
+
+
+     --------------------------------------------------------------
+     This is an academic version of ANSYS FLUENT. Usage of this product
+     license is limited to the terms and conditions specified in your ANSYS
+     license form, additional terms section.
+     --------------------------------------------------------------
+Host spawning Node 0 on machine "Engs-30669" (win64).
+
+------------------------------------------------------------------------------------
+ID    Hostname    Core  O.S.         PID    Vendor                                 
+------------------------------------------------------------------------------------
+n0    Engs-30669  1/32  Windows-x64  37068  13th Gen Intel(R) Core(TM) i9-13900    
+host  Engs-30669        Windows-x64  35304  13th Gen Intel(R) Core(TM) i9-13900    
+
+MPI Option Selected: intel
+------------------------------------------------------------------------------------
+
+Cleanup script file is C:\\Users\\kebl7595\\Desktop\\CFD\\Runs\\Flap\\test\\cleanup-fluent-Engs-30669-35304.bat
+
+Posting ANSYS Product Improvement Program startup data
+Done.
+
+Reading journal file C:/Users/kebl7595/Desktop/CFD/Runs/Flap/test/project1.jou...
+
+> /file/set-batch-options no no no 
+
+> 
+define/                 parametric-study/       solve/
+display/                plot/                   surface/
+exit                    preferences/            switch-to-meshing-mode
+file/                   print-license-usage     turbo-workflow/
+mesh/                   report/                 views/
+parallel/               server/
+
+> /file/import/cgns/mesh  "./project1.cgns"
+Engs-30669 has other FLUENT parallel processes running.                       Process affinity not being set.
+
+Importing "./project1.cgns"
+
+Opening library "C:\\PROGRA~1\\ANSYSI~1\\v231\\fluent\\fluent23.1.0\\vki\\win64\\devtools4.4.6.dll"... done.
+
+Read    33000 nodes
+   24072 hexahedral cells, zone  1
+   17404 quadrilateral wall faces, zone  2.
+   63040 quadrilateral interior faces, zone  3.
+     474 quadrilateral interface faces, zone  4.
+
+Building...
+     mesh
+     materials,
+     interface,
+     domains,
+     zones,
+	interface-default_subface
+	default_interior-1
+	default_subface
+	default
+     parallel,
+The automatic selection for flux type has changed to Rhie-Chow: momentum based.
+
+Done.
+
+
+> 
+adjoint/                parallel/               server/
+define/                 parametric-study/       solve/
+display/                plot/                   surface/
+exit                    preferences/            turbo-workflow/
+file/                   print-license-usage     views/
+mesh/                   report/
+
+> /define/models/solver/density-based-implicit yes
+
+> 
+adjoint/                parallel/               server/
+define/                 parametric-study/       solve/
+display/                plot/                   surface/
+exit                    preferences/            turbo-workflow/
+file/                   print-license-usage     views/
+mesh/                   report/
+
+> /define/models/energy? yes yes invalid command [yes]
+yes
+
+> /define/models/viscous/kw-standard? yes
+
+> 
+adjoint/                parallel/               server/
+define/                 parametric-study/       solve/
+display/                plot/                   surface/
+exit                    preferences/            turbo-workflow/
+file/                   print-license-usage     views/
+mesh/                   report/
+
+> /define/materials/change-create air air air is a fluid
+yes 
+Density
+ideal-gas no data required.
+
+no no no no no no
+
+> 
+adjoint/                parallel/               server/
+define/                 parametric-study/       solve/
+display/                plot/                   surface/
+exit                    preferences/            turbo-workflow/
+file/                   print-license-usage     views/
+mesh/                   report/
+
+> /mesh/modify-zones/sep-face-zone-angle 2 90 yes
+
+ 8024 faces in contiguous region 0
+ 441 faces in contiguous region 1
+ 618 faces in contiguous region 2
+ 8024 faces in contiguous region 3
+ 297 faces in contiguous region 4
+ Separates zone 2 into 5 zone(s).
+Updating new zone information...
+   created new zone default_subface:009 from default_subface
+   created new zone default_subface:008 from default_subface
+   created new zone default_subface:007 from default_subface
+   created new zone default_subface:006 from default_subface
+done.
+
+> 
+adjoint/                parallel/               server/
+define/                 parametric-study/       solve/
+display/                plot/                   surface/
+exit                    preferences/            turbo-workflow/
+file/                   print-license-usage     views/
+mesh/                   report/
+
+> ;/define/boundary-conditions/zone-name  5   te
+;/define/boundary-conditions/zone-name  7 wing
+;/define/boundary-conditions/zone-name  2 sym1
+;/define/boundary-conditions/zone-name  9 sym2
+
+adjoint/                parallel/               server/
+define/                 parametric-study/       solve/
+display/                plot/                   surface/
+exit                    preferences/            turbo-workflow/
+file/                   print-license-usage     views/
+mesh/                   report/
+
+> ;/define/boundary-conditions/zone-name  8 far1
+;/define/boundary-conditions/zone-name 10 far2
+
+adjoint/                parallel/               server/
+define/                 parametric-study/       solve/
+display/                plot/                   surface/
+exit                    preferences/            turbo-workflow/
+file/                   print-license-usage     views/
+mesh/                   report/
+
+> ;/define/boundary-conditions/zone-type  8 pressure-far-field
+;/define/boundary-conditions/zone-type 10 pressure-far-field
+;/define/boundary-conditions/zone-type  2 symmetry
+;/define/boundary-conditions/zone-type  9 symmetry
+
+adjoint/                parallel/               server/
+define/                 parametric-study/       solve/
+display/                plot/                   surface/
+exit                    preferences/            turbo-workflow/
+file/                   print-license-usage     views/
+mesh/                   report/
+
+> ;/define/boundary-conditions/pressure-far-field far1 no 0 no 0.1 no 300 yes no 0.984808 no 0.173648 no 0. no yes 5 0.02
+;/define/boundary-conditions/pressure-far-field far2 no 0 no 0.1 no 300 yes no 0.984808 no 0.173648 no 0. no yes 5 0.02
+
+adjoint/                parallel/               server/
+define/                 parametric-study/       solve/
+display/                plot/                   surface/
+exit                    preferences/            turbo-workflow/
+file/                   print-license-usage     views/
+mesh/                   report/
+
+> ;/solve/initialize/compute-defaults/pressure-far-field far1
+;/solve/initialize/initialize-flow
+
+adjoint/                parallel/               server/
+define/                 parametric-study/       solve/
+display/                plot/                   surface/
+exit                    preferences/            turbo-workflow/
+file/                   print-license-usage     views/
+mesh/                   report/
+
+> ;/solve/monitors/residual/convergence-criteria 1.e-9 1.e-9 1.e-9 1.e-9 1.e-9 1.e-9 1.e-9
+;/solve/iterate 2000
+
+adjoint/                parallel/               server/
+define/                 parametric-study/       solve/
+display/                plot/                   surface/
+exit                    preferences/            turbo-workflow/
+file/                   print-license-usage     views/
+mesh/                   report/
+
+> ;/file/write-case-data project1
+;/file/export/ascii "./surface.dat" wing te () no pressure mach-number quit no
+
+adjoint/                parallel/               server/
+define/                 parametric-study/       solve/
+display/                plot/                   surface/
+exit                    preferences/            turbo-workflow/
+file/                   print-license-usage     views/
+mesh/                   report/
+
+> ;/exit
+
+> /exit y
+
+Posting ANSYS Product Improvement Program performance data 
+Done.
+Auto-Transcript Stop Time:  09:25:33, 22 May 2024 GMT Daylight Time 
+Total Transcript Time: 0 Minute 19 Second.

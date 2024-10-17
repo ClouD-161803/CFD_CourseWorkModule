@@ -1,0 +1,304 @@
+Auto-Transcript Start Time:  13:59:01, 20 May 2024 GMT Daylight Time 
+Current Directory: "C:\Users\kebl7595\Desktop\CFD\Runs\Actual Data\0 degree coarse mesh"
+
+              Welcome to ANSYS Fluent 2023 R1
+
+              Copyright 1987-2023 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: Nov 28 2022 09:52:02 EST  Build Id: 10208  
+ 
+Connected License Server List:	1055@ansyslic.eng.ox.ac.uk
+
+*********************************************
+Info: Your license enables 4-way parallel execution.
+For faster simulations, please start the application with the appropriate parallel options.
+*********************************************
+
+
+     --------------------------------------------------------------
+     This is an academic version of ANSYS FLUENT. Usage of this product
+     license is limited to the terms and conditions specified in your ANSYS
+     license form, additional terms section.
+     --------------------------------------------------------------
+Host spawning Node 0 on machine "Engs-30669" (win64).
+
+------------------------------------------------------------------------------------
+ID    Hostname    Core  O.S.         PID    Vendor                                 
+------------------------------------------------------------------------------------
+n0    Engs-30669  1/32  Windows-x64  45060  13th Gen Intel(R) Core(TM) i9-13900    
+host  Engs-30669        Windows-x64  19968  13th Gen Intel(R) Core(TM) i9-13900    
+
+MPI Option Selected: intel
+------------------------------------------------------------------------------------
+
+Cleanup script file is C:\\Users\\kebl7595\\Desktop\\CFD\\Runs\\Actual Data\\0 degree coarse mesh\\cleanup-fluent-Engs-30669-19968.bat
+QA Service Message :
+QA Services Agreement Enabled. This application is included in the scope of an ANSYS QA Services Agreement.
+Posting ANSYS Product Improvement Program startup data
+Done.
+Fast-loading "C:\PROGRA~1\ANSYSI~1\v231\fluent\fluent23.1.0\\addons\afd\lib\hdfio.bin"
+Done.
+
+Engs-30669 has other FLUENT parallel processes running.                       Process affinity not being set.
+
+Reading from Engs-30669:"C:/Users/kebl7595/Desktop/CFD/Runs/Actual Data/0 degree coarse mesh/project1.cas.h5" in NODE0 mode ...
+  Reading mesh ...
+        7050 cells,     1 cell zone  ...
+           7050 hexahedral cells,  zone id: 1
+       23803 faces,     8 face zones ...
+           2350 quadrilateral symmetry faces,  zone id: 2
+            150 quadrilateral pressure-far-field faces,  zone id: 10
+           2350 quadrilateral symmetry faces,  zone id: 9
+            282 quadrilateral pressure-far-field faces,  zone id: 8
+            168 quadrilateral wall faces,  zone id: 7
+          18293 quadrilateral interior faces,  zone id: 3
+            204 quadrilateral interior faces,  zone id: 4
+              6 quadrilateral wall faces,  zone id: 5
+        9804 nodes,     1 node zone  ...
+  Done.
+
+
+Building...
+     mesh
+     materials,
+     interface,
+     domains,
+	mixture
+     zones,
+	te
+	interface-default_subface
+	default_interior-1
+	wing
+	far1
+	far2
+	sym1
+	sym2
+	default
+     parallel,
+Done.
+
+Reading from Engs-30669:"C:/Users/kebl7595/Desktop/CFD/Runs/Actual Data/0 degree coarse mesh/project1.dat.h5" in NODE0 mode ...
+
+
+  Reading results.
+Parallel variables...
+Done.
+
+> (cx-gui-do cx-activate-item "QA Service Message*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Contours"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Contours"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Contours"))
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '( 4))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '( 3 4))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '( 3))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-activate-item "Contours*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "Contours*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Calculation Activities"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Calculation Activities"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Calculation Activities"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Initialization"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Monitors"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Monitors"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Monitors"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Reference Frames"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Reference Frames"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Reference Frames"))
+(cx-gui-do cx-activate-tab-index "Reference Frame*Table1*Frame6" 0)
+(cx-gui-do cx-activate-tab-index "Reference Frame*Table1*Frame6" 1)
+(cx-gui-do cx-activate-tab-index "Reference Frame*Table1*Frame6" 0)
+(cx-gui-do cx-activate-tab-index "Reference Frame*Table1*Frame6" 2)
+(cx-gui-do cx-activate-tab-index "Reference Frame*Table1*Frame6" 0)
+(cx-gui-do cx-activate-item "Reference Frame*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Cell Zone Conditions"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Cell Zone Conditions"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Cell Zone Conditions"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Models"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Reports|Forces"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Reports|Forces"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Reports|Forces"))
+(cx-gui-do cx-set-real-entry-list "Force Reports*Table1*Frame2*Frame1(Direction Vector)*RealEntry2(Y)" '( 1))
+(cx-gui-do cx-set-real-entry-list "Force Reports*Table1*Frame2*Frame1(Direction Vector)*RealEntry1(X)" '( 0))
+(cx-gui-do cx-activate-item "Force Reports*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Reports|Surface Integrals"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Reports|Surface Integrals"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Reports|Surface Integrals"))
+(cx-gui-do cx-activate-item "Surface Integrals*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Reports|Volume Integrals"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Reports|Volume Integrals"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Reports|Volume Integrals"))
+(cx-gui-do cx-activate-item "Volume Integrals*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-activate-item "MenuBar*WriteSubMenu*Start Journal...")
+
+Opening input journal to file "C:/Users/kebl7595/Desktop/CFD/Runs/random/testjournal".
+help
+
+Type "?<command>" for help on a specific command.
+Type "?" to enter help mode, and "q" to exit help mode.
+
+The commands below are available in this menu.
+Those followed by "*" are unavailable with the current settings.
+
+adjoint/                                        results/*
+close-fluent*                                   results/*
+define/                                         server/
+display/                                        setup/*
+exit                                            setup/*
+file/                                           simulation-reports/*
+icing/*                                         solution/*
+mesh/                                           solution/*
+parallel/                                       solve/
+parameters-&-customization/*                    surface/
+parametric-study/                               switch-to-meshing-mode*
+plot/                                           turbo-post/*
+preferences/                                    turbo-workflow/
+print-license-usage                             views/
+report/
+
+> report
+
+/report> 
+dpm-histogram/          path-line-summary       surface-integrals/
+dpm-sample-output-udf   print-histogram         system/
+dpm-sample-sort-file?   projected-surface-area  volume-integrals/
+fluxes/                 reference-values/       write-histogram
+forces/                 simulation-reports/
+modified-setting/       summary
+
+/report> simulation reports
+invalid command [reports]
+
+/report> simulation-reports
+
+/report/simulation-reports> 
+delete-simulation-report                        read-simulation-report-template-file
+duplicate-simulation-report                     rename-simulation-report
+export-simulation-report-as-html                reset-report-to-defaults
+export-simulation-report-as-pdf                 view-simulation-report
+generate-simulation-report                      write-report-names-to-file
+list-simulation-reports                         write-simulation-report-template-file
+
+/report/simulation-reports> list-simulation-reports
+
+/report/simulation-reports> 
+delete-simulation-report                        read-simulation-report-template-file
+duplicate-simulation-report                     rename-simulation-report
+export-simulation-report-as-html                reset-report-to-defaults
+export-simulation-report-as-pdf                 view-simulation-report
+generate-simulation-report                      write-report-names-to-file
+list-simulation-reports                         write-simulation-report-template-file
+
+/report/simulation-reports> quit
+
+/report> quit
+
+> help
+
+Type "?<command>" for help on a specific command.
+Type "?" to enter help mode, and "q" to exit help mode.
+
+The commands below are available in this menu.
+Those followed by "*" are unavailable with the current settings.
+
+adjoint/                                        results/*
+close-fluent*                                   results/*
+define/                                         server/
+display/                                        setup/*
+exit                                            setup/*
+file/                                           simulation-reports/*
+icing/*                                         solution/*
+mesh/                                           solution/*
+parallel/                                       solve/
+parameters-&-customization/*                    surface/
+parametric-study/                               switch-to-meshing-mode*
+plot/                                           turbo-post/*
+preferences/                                    turbo-workflow/
+print-license-usage                             views/
+report/
+
+> report
+
+/report> 
+dpm-histogram/          path-line-summary       surface-integrals/
+dpm-sample-output-udf   print-histogram         system/
+dpm-sample-sort-file?   projected-surface-area  volume-integrals/
+fluxes/                 reference-values/       write-histogram
+forces/                 simulation-reports/
+modified-setting/       summary
+
+/report> forces
+
+/report/forces> 
+pressure-center         wall-forces             wall-moments
+
+/report/forces> (cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Reports|Forces"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Reports|Forces"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Reports|Forces"))
+(cx-gui-do cx-set-toggle-button2 "Force Reports*Table1*ToggleBox1(Options)*Moments" #t)
+(cx-gui-do cx-activate-item "Force Reports*Table1*ToggleBox1(Options)*Moments")
+(cx-gui-do cx-set-toggle-button2 "Force Reports*Table1*ToggleBox1(Options)*Center of Pressure" #t)
+(cx-gui-do cx-activate-item "Force Reports*Table1*ToggleBox1(Options)*Center of Pressure")
+(cx-gui-do cx-set-toggle-button2 "Force Reports*Table1*ToggleBox1(Options)*Forces" #t)
+(cx-gui-do cx-activate-item "Force Reports*Table1*ToggleBox1(Options)*Forces")
+(cx-gui-do cx-activate-item "Force Reports*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Reports|Forces"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Reports|Forces"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Reports|Forces"))
+(cx-gui-do cx-set-toggle-button2 "Force Reports*Table1*ToggleBox1(Options)*Moments" #t)
+(cx-gui-do cx-activate-item "Force Reports*Table1*ToggleBox1(Options)*Moments")
+(cx-gui-do cx-set-toggle-button2 "Force Reports*Table1*ToggleBox1(Options)*Forces" #t)
+(cx-gui-do cx-activate-item "Force Reports*Table1*ToggleBox1(Options)*Forces")
+wall-forces
+all wall zones [yes] y
+x-component of force vector [1] n
+Invalid real.
+x-component of force vector [1] 0
+y-component of force vector [0] 1
+z-component of force vector [0] 0
+Write to File? [no] y
+filename (*.frp) [""] Force
+
+/report/forces> 
+pressure-center         wall-forces             wall-moments
+
+/report/forces> quit
+
+/report> quit
+
+> (cx-gui-do cx-activate-item "MenuBar*WriteSubMenu*Stop Journal")
+
+Journal closed.
+(cx-use-window-id 51)
+(handle-key "??")
+(cx-gui-do cx-activate-item "Force Reports*PanelButtons*PushButton2(Cancel)")
+/exit y
+
+Posting ANSYS Product Improvement Program performance data 
+Done.
+(cx-gui-do cx-activate-item "Question*OK")
+Auto-Transcript Stop Time:  14:47:25, 20 May 2024 GMT Daylight Time 
+Total Transcript Time: 48 Minute 24 Second.

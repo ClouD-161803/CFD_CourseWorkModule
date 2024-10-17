@@ -1,0 +1,111 @@
+Auto-Transcript Start Time:  13:52:47, 20 May 2024 GMT Daylight Time 
+Current Directory: "C:\Users\kebl7595\Desktop\CFD\Runs\Actual Data\0 degree coarse mesh"
+
+              Welcome to ANSYS Fluent 2023 R1
+
+              Copyright 1987-2023 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: Nov 28 2022 09:52:02 EST  Build Id: 10208  
+ 
+Connected License Server List:	1055@ansyslic.eng.ox.ac.uk
+
+*********************************************
+Info: Your license enables 4-way parallel execution.
+For faster simulations, please start the application with the appropriate parallel options.
+*********************************************
+
+
+     --------------------------------------------------------------
+     This is an academic version of ANSYS FLUENT. Usage of this product
+     license is limited to the terms and conditions specified in your ANSYS
+     license form, additional terms section.
+     --------------------------------------------------------------
+Host spawning Node 0 on machine "Engs-30669" (win64).
+
+------------------------------------------------------------------------------------
+ID    Hostname    Core  O.S.         PID    Vendor                                 
+------------------------------------------------------------------------------------
+n0    Engs-30669  1/32  Windows-x64  28168  13th Gen Intel(R) Core(TM) i9-13900    
+host  Engs-30669        Windows-x64  23584  13th Gen Intel(R) Core(TM) i9-13900    
+
+MPI Option Selected: intel
+------------------------------------------------------------------------------------
+
+Cleanup script file is C:\\Users\\kebl7595\\Desktop\\CFD\\Runs\\Actual Data\\0 degree coarse mesh\\cleanup-fluent-Engs-30669-23584.bat
+QA Service Message :
+QA Services Agreement Enabled. This application is included in the scope of an ANSYS QA Services Agreement.
+Posting ANSYS Product Improvement Program startup data
+Done.
+Fast-loading "C:\PROGRA~1\ANSYSI~1\v231\fluent\fluent23.1.0\\addons\afd\lib\hdfio.bin"
+Done.
+
+Engs-30669 has other FLUENT parallel processes running.                       Process affinity not being set.
+
+Reading from Engs-30669:"C:/Users/kebl7595/Desktop/CFD/Runs/Actual Data/0 degree coarse mesh/project1.cas.h5" in NODE0 mode ...
+  Reading mesh ...
+        7050 cells,     1 cell zone  ...
+           7050 hexahedral cells,  zone id: 1
+       23803 faces,     8 face zones ...
+           2350 quadrilateral symmetry faces,  zone id: 2
+            150 quadrilateral pressure-far-field faces,  zone id: 10
+           2350 quadrilateral symmetry faces,  zone id: 9
+            282 quadrilateral pressure-far-field faces,  zone id: 8
+            168 quadrilateral wall faces,  zone id: 7
+          18293 quadrilateral interior faces,  zone id: 3
+            204 quadrilateral interior faces,  zone id: 4
+              6 quadrilateral wall faces,  zone id: 5
+        9804 nodes,     1 node zone  ...
+  Done.
+
+
+Building...
+     mesh
+     materials,
+     interface,
+     domains,
+	mixture
+     zones,
+	te
+	interface-default_subface
+	default_interior-1
+	wing
+	far1
+	far2
+	sym1
+	sym2
+	default
+     parallel,
+Done.
+
+Reading from Engs-30669:"C:/Users/kebl7595/Desktop/CFD/Runs/Actual Data/0 degree coarse mesh/project1.dat.h5" in NODE0 mode ...
+
+
+  Reading results.
+Parallel variables...
+Done.
+
+> (cx-gui-do cx-activate-item "QA Service Message*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Plots"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Plots"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Plots"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Plots|XY Plot"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Plots|XY Plot"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Plots|XY Plot"))
+(cx-gui-do cx-set-list-selections "Solution XY Plot*Table1*Table3*Table1*DropDownList2" '( 1))
+(cx-gui-do cx-activate-item "Solution XY Plot*Table1*Table3*Table1*DropDownList2")
+(cx-gui-do cx-set-list-selections "Solution XY Plot*Table1*Table3*Frame3*List1(Surfaces)" '( 6))
+(cx-gui-do cx-activate-item "Solution XY Plot*Table1*Table3*Frame3*List1(Surfaces)")
+(cx-gui-do cx-activate-item "Solution XY Plot*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "Solution XY Plot*PanelButtons*PushButton2(Cancel)")
+/exit y
+
+Posting ANSYS Product Improvement Program performance data 
+Done.
+(cx-gui-do cx-activate-item "Question*OK")
+Auto-Transcript Stop Time:  13:57:29, 20 May 2024 GMT Daylight Time 
+Total Transcript Time: 4 Minute 42 Second.

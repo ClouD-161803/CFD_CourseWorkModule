@@ -1,0 +1,8 @@
+# family_boco file written by ICEM CFD by kebl7595 on Mon May 20 10:38:01 GMT Daylight Time 2024
+## solver CGNS
+"DEFAULT"
+"DEFAULT_SUBFACE"
+"DEFAULT_EDGE"
+"DEFAULT_VERTEX"
+"PART0"
+

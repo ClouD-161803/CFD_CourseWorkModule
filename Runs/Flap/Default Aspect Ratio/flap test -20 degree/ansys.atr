@@ -1,0 +1,26 @@
+# Written by ICEM CFD 23.1, user kebl7595, Wed May 22 09:18:10 GMT Daylight Time 2024
+
+begin family DEFAULT
+    begin solver "CGNS"
+    end solver "CGNS"
+end family DEFAULT
+
+begin family DEFAULT_SUBFACE
+    begin solver "CGNS"
+    end solver "CGNS"
+end family DEFAULT_SUBFACE
+
+begin family DEFAULT_EDGE
+    begin solver "CGNS"
+    end solver "CGNS"
+end family DEFAULT_EDGE
+
+begin family DEFAULT_VERTEX
+    begin solver "CGNS"
+    end solver "CGNS"
+end family DEFAULT_VERTEX
+
+begin family PART0
+    begin solver "CGNS"
+    end solver "CGNS"
+end family PART0

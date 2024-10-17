@@ -1,0 +1,5 @@
+# family_boco file written by ICEM CFD by engs1748 on Sun May 30 22:22:40 GMT Summer Time 2021
+## solver ANSYS Fluent
+"DEFAULT"
+"DEFAULT_SUBFACE"
+"DEFAULT_EDGE"

@@ -1,0 +1,301 @@
+Auto-Transcript Start Time:  10:21:55, 20 May 2024 GMT Daylight Time 
+Current Directory: "C:\Users\kebl7595\Desktop\CFD\fluent\fluent"
+
+              Welcome to ANSYS Fluent 2023 R1
+
+              Copyright 1987-2023 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: Nov 28 2022 09:53:10 EST  Build Id: 10208  
+ 
+Connected License Server List:	1055@ansyslic.eng.ox.ac.uk
+
+*********************************************
+Info: Your license enables 4-way parallel execution.
+For faster simulations, please start the application with the appropriate parallel options.
+*********************************************
+
+
+     --------------------------------------------------------------
+     This is an academic version of ANSYS FLUENT. Usage of this product
+     license is limited to the terms and conditions specified in your ANSYS
+     license form, additional terms section.
+     --------------------------------------------------------------
+Host spawning Node 0 on machine "Engs-30669" (win64).
+
+------------------------------------------------------------------------------------
+ID    Hostname    Core  O.S.         PID    Vendor                                 
+------------------------------------------------------------------------------------
+n0    Engs-30669  1/32  Windows-x64  39296  13th Gen Intel(R) Core(TM) i9-13900    
+host  Engs-30669        Windows-x64  39008  13th Gen Intel(R) Core(TM) i9-13900    
+
+MPI Option Selected: intel
+------------------------------------------------------------------------------------
+
+Cleanup script file is C:\\Users\\kebl7595\\Desktop\\CFD\\fluent\\fluent\\cleanup-fluent-Engs-30669-39008.bat
+QA Service Message :
+QA Services Agreement Enabled. This application is included in the scope of an ANSYS QA Services Agreement.
+ +------------------------------------------------------------------+
+ |                    ANSYS Product Improvement                     |
+ |                                                                  |
+ |   ANSYS Product Improvement Program helps improve ANSYS          |
+ |   products. Participating in this program is like filling out a  |
+ |   survey. Without interrupting your work, the software reports   |
+ |   anonymous usage information such as errors, machine and        |
+ |   solver statistics, features used, etc. to ANSYS. We never      |
+ |   use the data to identify or contact you.                       |
+ |   The data does NOT contain:                                     |
+ |   - Any personally identifiable information including names,     |
+ |     IP addresses, file names, part names, etc.                   |
+ |   - Any information about your geometry or design specific       |
+ |     inputs.                                                      |
+ |   You can stop participation at any time. To change your         |
+ |   selection go to Help >> ANSYS Product Improvement Program      |
+ |   in the GUI.                                                    |
+ |   For more information about the ANSYS Privacy Policy, please    |
+ |   check: http://www.ansys.com/privacy                            |
+ |                                                                  |
+ +------------------------------------------------------------------+
+
+Reading journal file C:/Users/kebl7595/Desktop/CFD/fluent/fluent/project1.jou...
+
+> /file/set-batch-options no no no 
+
+> 
+define/                 parametric-study/       solve/
+display/                plot/                   surface/
+exit                    preferences/            switch-to-meshing-mode
+file/                   print-license-usage     turbo-workflow/
+mesh/                   report/                 views/
+parallel/               server/
+
+> /file/import/cgns/mesh  "./project1.cgns"Note: Rank = 0: Process affinity not being set (6).
+
+Importing "./project1.cgns"
+
+Opening library "C:\\PROGRA~1\\ANSYSI~1\\v231\\fluent\\fluent23.1.0\\vki\\win64\\devtools4.4.6.dll"... done.
+
+Read    17864 nodes
+   12996 hexahedral cells, zone  1
+    9462 quadrilateral wall faces, zone  2.
+   33972 quadrilateral interior faces, zone  3.
+     282 quadrilateral interface faces, zone  4.
+       6 quadrilateral wall faces, zone  5.
+
+Building...
+     mesh
+     materials,
+     interface,
+     domains,
+     zones,
+	default_exterior-1
+	interface-default_subface
+	default_interior-1
+	default_subface
+	default
+     parallel,
+The automatic selection for flux type has changed to Rhie-Chow: momentum based.
+
+Done.
+
+
+> 
+adjoint/                parallel/               server/
+define/                 parametric-study/       solve/
+display/                plot/                   surface/
+exit                    preferences/            turbo-workflow/
+file/                   print-license-usage     views/
+mesh/                   report/
+
+> /define/models/solver/density-based-implicit yes
+
+> 
+adjoint/                parallel/               server/
+define/                 parametric-study/       solve/
+display/                plot/                   surface/
+exit                    preferences/            turbo-workflow/
+file/                   print-license-usage     views/
+mesh/                   report/
+
+> /define/models/energy? yes yes invalid command [yes]
+yes
+
+> /define/models/viscous/inviscid yes
+
+> 
+adjoint/                parallel/               server/
+define/                 parametric-study/       solve/
+display/                plot/                   surface/
+exit                    preferences/            turbo-workflow/
+file/                   print-license-usage     views/
+mesh/                   report/
+
+> /define/materials/change-create air air air is a fluid
+yes 
+Density
+ideal-gas no data required.
+
+no no no no 
+
+> 
+adjoint/                parallel/               server/
+define/                 parametric-study/       solve/
+display/                plot/                   surface/
+exit                    preferences/            turbo-workflow/
+file/                   print-license-usage     views/
+mesh/                   report/
+
+> /mesh/modify-zones/sep-face-zone-angle 2 90 yes
+
+ 4332 faces in contiguous region 0
+ 228 faces in contiguous region 1
+ 342 faces in contiguous region 2
+ 4332 faces in contiguous region 3
+ 228 faces in contiguous region 4
+ Separates zone 2 into 5 zone(s).
+Updating new zone information...
+   created new zone default_subface:010 from default_subface
+   created new zone default_subface:009 from default_subface
+   created new zone default_subface:008 from default_subface
+   created new zone default_subface:007 from default_subface
+done.
+
+> 
+adjoint/                parallel/               server/
+define/                 parametric-study/       solve/
+display/                plot/                   surface/
+exit                    preferences/            turbo-workflow/
+file/                   print-license-usage     views/
+mesh/                   report/
+
+> /define/boundary-conditions/zone-name  5   te
+
+> /define/boundary-conditions/zone-name  7 wing
+
+> /define/boundary-conditions/zone-name  2 sym1
+
+> /define/boundary-conditions/zone-name  9 sym2
+
+> 
+adjoint/                parallel/               server/
+define/                 parametric-study/       solve/
+display/                plot/                   surface/
+exit                    preferences/            turbo-workflow/
+file/                   print-license-usage     views/
+mesh/                   report/
+
+> /define/boundary-conditions/zone-name  8 far1
+
+> /define/boundary-conditions/zone-name 10 far2
+
+> 
+adjoint/                parallel/               server/
+define/                 parametric-study/       solve/
+display/                plot/                   surface/
+exit                    preferences/            turbo-workflow/
+file/                   print-license-usage     views/
+mesh/                   report/
+
+> /define/boundary-conditions/zone-type  8 pressure-far-field
+
+> /define/boundary-conditions/zone-type 10 pressure-far-field
+
+> /define/boundary-conditions/zone-type  2 symmetry
+
+> /define/boundary-conditions/zone-type  9 symmetry
+
+> 
+adjoint/                parallel/               server/
+define/                 parametric-study/       solve/
+display/                plot/                   surface/
+exit                    preferences/            turbo-workflow/
+file/                   print-license-usage     views/
+mesh/                   report/
+
+> /define/boundary-conditions/pressure-far-field (far2 far1)
+far1 no 0 no 0.1 no 300 yes no 1 no 0 no 0
+
+> /define/boundary-conditions/pressure-far-field (far2 far1)
+far2 no 0 no 0.1 no 300 yes no 1 no 0 no 0
+
+> 
+adjoint/                parallel/               server/
+define/                 parametric-study/       solve/
+display/                plot/                   surface/
+exit                    preferences/            turbo-workflow/
+file/                   print-license-usage     views/
+mesh/                   report/
+
+> /solve/initialize/compute-defaults/pressure-far-field (far2 far1)
+far1
+
+> /solve/initialize/initialize-flow
+
+> 
+adjoint/                parallel/               server/
+define/                 parametric-study/       solve/
+display/                plot/                   surface/
+exit                    preferences/            turbo-workflow/
+file/                   print-license-usage     views/
+mesh/                   report/
+
+> /solve/monitors/residual/convergence-criteria 1.e-9 1.e-9 1.e-9 1.e-9 1.e-9
+
+> /solve/iterate 10
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+     1  1.0000e+00  1.0000e+00  1.0000e+00  0.0000e+00  1.0000e+00  0:00:00    9
+     2  5.4617e-01  5.9503e-01  3.2665e-01  1.0000e+00  5.4687e-01  0:00:08    8
+     3  2.8974e-01  2.2786e-01  2.5906e-01  8.8697e-01  2.8999e-01  0:00:06    7
+     4  1.8263e-01  1.9630e-01  1.7403e-01  5.8650e-01  1.8270e-01  0:00:04    6
+     5  1.4139e-01  1.4682e-01  1.1398e-01  6.7344e-01  1.4149e-01  0:00:03    5
+     6  1.1827e-01  1.0296e-01  7.9049e-02  8.3787e-01  1.1841e-01  0:00:02    4
+     7  1.0175e-01  7.2525e-02  5.8062e-02  9.0590e-01  1.0192e-01  0:00:01    3
+     8  8.8662e-02  5.4181e-02  4.4189e-02  8.2875e-01  8.8840e-02  0:00:01    2
+     9  7.8490e-02  4.3527e-02  3.4599e-02  7.3693e-01  7.8664e-02  0:00:00    1
+    10  7.0568e-02  3.7763e-02  2.7873e-02  6.7186e-01  7.0737e-02  0:00:00    0
+
+> 
+adjoint/                parallel/               server/
+define/                 parametric-study/       solve/
+display/                plot/                   surface/
+exit                    preferences/            turbo-workflow/
+file/                   print-license-usage     views/
+mesh/                   report/
+
+> /file/write-case-data project1
+Fast-loading "C:\PROGRA~1\ANSYSI~1\v231\fluent\fluent23.1.0\\addons\afd\lib\hdfio.bin"
+Done.
+
+Writing to Engs-30669:"C:\Users\kebl7595\Desktop\CFD\fluent\fluent\project1.cas.h5" in NODE0 mode and compression level 1 ...
+       12996 cells,     1 zone  ...
+       43722 faces,     8 zones ...
+       17864 nodes,     1 zone  ...
+  Done.
+Done.
+
+Writing to Engs-30669:"C:\Users\kebl7595\Desktop\CFD\fluent\fluent\project1.dat.h5" in NODE0 mode and compression level 1 ...
+  Writing results.
+Done.
+
+> /file/export/ascii "./surface.dat" wing te () no pressure mach-number quit no
+
+Writing "./surface.dat"...
+
+Writing information to ascii file ...
+Done.
+
+
+> 
+adjoint/                parallel/               server/
+define/                 parametric-study/       solve/
+display/                plot/                   surface/
+exit                    preferences/            turbo-workflow/
+file/                   print-license-usage     views/
+mesh/                   report/
+
+> /exit
+Auto-Transcript Stop Time:  10:22:12, 20 May 2024 GMT Daylight Time 
+Total Transcript Time: 0 Minute 17 Second.

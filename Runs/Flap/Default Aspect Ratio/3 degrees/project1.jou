@@ -1,0 +1,39 @@
+/file/set-batch-options no no no 
+
+/file/import/cgns/mesh  "./project1.cgns"
+
+/define/models/solver/density-based-implicit yes
+
+/define/models/energy? yes yes yes
+/define/models/viscous/kw-standard? yes
+
+/define/materials/change-create air air yes ideal-gas no no no no no no
+
+/mesh/modify-zones/sep-face-zone-angle 2 90 yes
+
+/define/boundary-conditions/zone-name  6 wing
+/define/boundary-conditions/zone-name  2 sym1
+/define/boundary-conditions/zone-name  8 sym2
+
+/define/boundary-conditions/zone-name  7 far1
+/define/boundary-conditions/zone-name 9 far2
+
+/define/boundary-conditions/zone-type  7 pressure-far-field
+/define/boundary-conditions/zone-type 9 pressure-far-field
+/define/boundary-conditions/zone-type  2 symmetry
+/define/boundary-conditions/zone-type  8 symmetry
+
+/define/boundary-conditions/pressure-far-field far1 no 0 no 0.1 no 300 yes no 0.99863 no -0.052336 no 0. no yes 5 0.02
+/define/boundary-conditions/pressure-far-field far2 no 0 no 0.1 no 300 yes no 0.99863 no -0.052336 no 0. no yes 5 0.02
+
+/solve/initialize/compute-defaults/pressure-far-field far1
+/solve/initialize/initialize-flow
+
+/solve/monitors/residual/convergence-criteria 1.e-9 1.e-9 1.e-9 1.e-9 1.e-9 1.e-9 1.e-9
+/solve/iterate 2000
+
+/file/write-case-data project1
+/file/export/ascii "./surface.dat" wing () no pressure mach-number quit no
+/report/forces/wall-forces y -0.052336 -0.99863 0 y "Lift"
+/report/forces/wall-forces y 0.99863 -0.052336 0 y "Drag"
+/exit

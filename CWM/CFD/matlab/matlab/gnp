@@ -1,0 +1,27 @@
+set term postscript "Arial" 20
+
+set out "grid.ps"
+set size ratio -1
+
+set xlabel "x [m]"
+set ylabel "y [m]"
+
+set grid
+
+p "v0.dat" w l lt 1 lc "black" title "", \
+  "v1.dat" w l lt 1 lc "black" title "", \
+  "v2.dat" w l lt 1 lc "black" title ""
+
+set out "grid1.ps"
+set size ratio -1
+
+set xlabel "x [m]"
+set ylabel "y [m]"
+
+set grid
+set xr [-0.25:1.25]
+set yr [-0.25:0.25]
+
+p "v0.dat" w l lt 1 lc "black" title "", \
+  "v1.dat" w l lt 1 lc "black" title "", \
+  "v2.dat" w l lt 1 lc "black" title ""
